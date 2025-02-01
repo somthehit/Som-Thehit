@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="current-date"></div>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter city name" id="search-input">
+            <button id="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <div class="weather-info">
+            <div class="current-weather">
+                <h2 class="city"><i class="fas fa-map-marker-alt"></i> Weather in City</h2>
+                <div class="time"><i class="far fa-clock"></i> Current Time: --:-- </div>
+                <div class="temp">--°C</div>
+                <img src="" alt="weather icon" class="weather-icon">
+                <div class="description">Weather Description</div>
+                <div class="details">
+                    <div class="humidity">
+                        <i class="fas fa-tint"></i>
+                        <span>Humidity: --%</span>
+                    </div>
+                    <div class="wind">
+                        <i class="fas fa-wind"></i>
+                        <span>Wind Speed: -- km/h</span>
+                    </div>
+                </div>
+                <div id="current-date"></div>
+            </div>
+
+            <div class="forecast">
+                <h2><i class="far fa-calendar-alt"></i> 5-Day Forecast</h2>
+                <div class="forecast-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

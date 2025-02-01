@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Som P. Chaudhary</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Som P. Chaudhary" class="logo-img">
+                </a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="#" class="active">Courses</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="login.html" class="nav-login-btn" id="loginBtn"><i class="fas fa-user"></i> Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="courses-page">
+        <section class="course-categories">
+            <h2>Course Categories</h2>
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">All Courses</button>
+                <button class="category-btn" data-category="web">Web Development</button>
+                <button class="category-btn" data-category="python">Python</button>
+                <button class="category-btn" data-category="data">Data Science</button>
+                <button class="category-btn" data-category="ai">AI & ML</button>
+            </div>
+        </section>
+
+        <section class="featured-courses">
+            <h2>Featured Courses</h2>
+            <div class="courses-grid">
+                <!-- Web Development Courses -->
+                <div class="course-card" data-category="web">
+                    <div class="course-banner">
+                        <img src="courses/mern-stack.jpg" alt="MERN Stack">
+                        <div class="course-tag">Bestseller</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Complete MERN Stack Development</h3>
+                        <div class="course-info">
+                            <p class="description">Master MongoDB, Express.js, React, and Node.js with real-world projects</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-clock"></i> 48 hours</span>
+                                <span><i class="fas fa-level-up-alt"></i> All Levels</span>
+                            </div>
+                            <div class="course-stats">
+                                <span><i class="fas fa-star"></i> 4.8</span>
+                                <span><i class="fas fa-users"></i> 15,000+ students</span>
+                            </div>
+                            <div class="price-section">
+                                <span class="price">$129.99</span>
+                                <span class="original-price">$199.99</span>
+                            </div>
+                        </div>
+                        <a href="#" class="enroll-button">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- Python Course -->
+                <div class="course-card" data-category="python">
+                    <div class="course-banner">
+                        <img src="courses/python-advanced.jpg" alt="Advanced Python">
+                        <div class="course-tag">New</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Advanced Python Programming</h3>
+                        <div class="course-info">
+                            <p class="description">Advanced concepts, design patterns, and professional best practices</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-clock"></i> 35 hours</span>
+                                <span><i class="fas fa-level-up-alt"></i> Advanced</span>
+                            </div>
+                            <div class="course-stats">
+                                <span><i class="fas fa-star"></i> 4.9</span>
+                                <span><i class="fas fa-users"></i> 8,000+ students</span>
+                            </div>
+                            <div class="price-section">
+                                <span class="price">$89.99</span>
+                                <span class="original-price">$149.99</span>
+                            </div>
+                        </div>
+                        <a href="#" class="enroll-button">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- Data Science Course -->
+                <div class="course-card" data-category="data">
+                    <div class="course-banner">
+                        <img src="courses/data-science.jpg" alt="Data Science">
+                        <div class="course-tag">Popular</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Complete Data Science Bootcamp</h3>
+                        <div class="course-info">
+                            <p class="description">From statistics to machine learning with real-world applications</p>
+                            <div class="course-meta">
+                                <span><i class="fas fa-clock"></i> 52 hours</span>
+                                <span><i class="fas fa-level-up-alt"></i> Intermediate</span>
+                            </div>
+                            <div class="course-stats">
+                                <span><i class="fas fa-star"></i> 4.7</span>
+                                <span><i class="fas fa-users"></i> 12,000+ students</span>
+                            </div>
+                            <div class="price-section">
+                                <span class="price">$139.99</span>
+                                <span class="original-price">$199.99</span>
+                            </div>
+                        </div>
+                        <a href="#" class="enroll-button">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- More courses... -->
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/somthehit" class="github"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/som-prakash-chaudhary-68b5b3348/" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/somthehit" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/somthehit992" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@somthehit" class="youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2024 Som P. Chaudhary. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="courses.js"></script>
+</body>
+</html>

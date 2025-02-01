@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Som P. Chaudhary" class="logo-img">
+                </a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html" class="nav-login-btn" id="loginBtn"><i class="fas fa-user"></i> Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Som P. Chaudhary</span></h1>
+                <p class="typewriter">Full Stack Developer | UI/UX Designer | Tech Enthusiast | Python Developer</p>
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+        <div class="floating-elements">
+            <div class="particles-container"></div>
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <div class="circle circle-4"></div>
+            <div class="square square-1"></div>
+            <div class="square square-2"></div>
+            <div class="dot dot-1"></div>
+            <div class="dot dot-2"></div>
+            <div class="dot dot-3"></div>
+            <div class="triangle triangle-1"></div>
+            <div class="triangle triangle-2"></div>
+        </div>
+    </section>
+    
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <p>HTML5</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS3</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <p>Python</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-react"></i>
+                <p>React</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-node"></i>
+                <p>Node.js</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-git-alt"></i>
+                <p>Git</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-photo-video"></i>
+                <p>Adobe Photoshop</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-pencil-ruler"></i>
+                <p>Adobe Illustrator</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-film"></i>
+                <p>Primera Pro</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="assets/tic-tac-toe-game.jpg" alt="Tic Tac Toe Game">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <i class="fas fa-gamepad project-icon"></i>
+                            <h3>Tic Tac Toe Game</h3>
+                        </div>
+                        <p>A classic two-player game built with HTML, CSS, and JavaScript. Features include player turn tracking, win detection, and score tracking.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-html5"></i> HTML5</span>
+                            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                        <a href="projects/Tic Tac Toe Game/ttt_game.html" class="project-link"><i class="fas fa-play"></i> Play Game</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/morden calculator.png" alt="Modern Calculator">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <i class="fas fa-calculator project-icon"></i>
+                            <h3>Modern Calculator</h3>
+                        </div>
+                        <p>A sleek calculator application with standard and scientific functions, keyboard support, and theme switching.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-html5"></i> HTML5</span>
+                            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                        <a href="projects\Morden Calculator\modern_calculator.html" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/currency converter.png" alt="Currency Converter">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <i class="fas fa-exchange-alt project-icon"></i>
+                            <h3>Currency Converter</h3>
+                        </div>
+                        <p>Real-time currency converter using live exchange rates API. Supports 170+ currencies with historical rate charts.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-html5"></i> HTML5</span>
+                            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                        <a href="projects\Currency Converter\currency.html" class="project-link">Convert Currency</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/Responsiv_website.png" alt="Responsive Portfolio">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <i class="fas fa-laptop-code project-icon"></i>
+                            <h3>Responsive Portfolio Website</h3>
+                        </div>
+                        <p>A modern, responsive portfolio website built with HTML5, CSS3, and JavaScript. Features smooth scrolling, dark mode, and mobile-first design.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-html5"></i> HTML5</span>
+                            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                        <a href="projects\Responsive Portfolio Website\index.html" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/Weather Dashboard.png" alt="Weather App">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <i class="fas fa-cloud-sun project-icon"></i>
+                            <h3>Weather Dashboard</h3>
+                        </div>
+                        <p>A weather application that provides real-time weather data using OpenWeatherMap API. Features include 5-day forecast and location search.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-html5"></i> HTML5</span>
+                            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                        <a href="projects/Weather App/weather.html" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/Interactive Todo App.png" alt="Todo App">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <i class="fas fa-tasks project-icon"></i>
+                            <h3>Interactive Todo App</h3>
+                        </div>
+                        <p>A feature-rich todo application with local storage, drag-and-drop functionality, and filter options. Built with vanilla JavaScript.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-html5"></i> HTML5</span>
+                            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                        <a href="projects/Todo Manager/todo.html" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/chat application.png" alt="Chat Application">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <i class="fas fa-comments project-icon"></i>
+                            <h3>Chat Application</h3>
+                        </div>
+                        <p>Real-time chat application with private messaging, group chats, and file sharing capabilities.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-react"></i> Html</span>
+                            <span><i class="fab fa-node"></i> Css</span>
+                            <span><i class="fas fa-server"></i> JavaScript</span>
+                        </div>
+                        <a href="projects\Chat Application\html\index.html" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/Task Automation.png" alt="Automation Tool">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <i class="fas fa-cogs project-icon"></i>
+                            <h3>Task Automation Tool</h3>
+                        </div>
+                        <p>Python-based automation tool for streamlining repetitive tasks and workflow optimization.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-robot"></i> Automation</span>
+                            <span><i class="fas fa-cog"></i> Scripting</span>
+                        </div>
+                        <a href="projects/automation-tool/index.html" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="assets/profile.jpg" alt="Som P. Chaudhary" class="profile-pic">
+            <div class="about-text">
+                <p>Hello! I'm a passionate developer with a deep enthusiasm for crafting beautiful, functional, and user-friendly web applications. With expertise in both front-end and back-end development, I excel at transforming ideas into impactful digital solutions. From designing intuitive user interfaces to building robust server-side architectures, I enjoy every step of the development process. My dedication to clean code, attention to detail, and commitment to delivering exceptional results drive my work. I thrive on collaboration and innovation, constantly seeking opportunities to learn and push the boundaries of what's possible in web development.
+
+Let me know if you need further tweaks!</p>
+                <div class="about-details">
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Punrabas Muncipality, Ward no. 2, Motibasti, Kanchanpur, Nepal</p>
+                    <p><i class="fas fa-briefcase"></i> <strong>Experience:</strong> 5 years</p>
+                    <p><i class="fas fa-phone"></i> <strong>Contact:</strong> +9779825695432, +9779742493056</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> somthehit@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" required>
+                <label for="name">Name</label>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="form-group">
+                <textarea id="message" required></textarea>
+                <label for="message">Message</label>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/somthehit" class="github"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/som-prakash-chaudhary-68b5b3348/" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/somthehit" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/somthehit992" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@somthehit" class="youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2024 Som P. Chaudhary. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script src="project/Currency Converter/src/index.js"></script>
+    <script src="js/particles.js"></script>
+</body>
+</html>

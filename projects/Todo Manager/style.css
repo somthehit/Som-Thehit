@@ -1,0 +1,333 @@
+:root {
+    --primary-dark: #1a237e;
+    --primary: #283593;
+    --primary-light: #3949ab;
+    --accent: #00bcd4;
+    --text-light: #ffffff;
+    --text-dark: #121212;
+    --background: #0a1929;
+    --surface: #132f4c;
+    --error: #cf6679;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--background);
+    min-height: 100vh;
+    padding: 2rem;
+    color: var(--text-light);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--surface);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+}
+
+.datetime-container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: var(--primary-dark);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.time-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.time {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent);
+    font-family: 'Digital-7', monospace;
+}
+
+.time-format-btn {
+    background: var(--primary-light);
+    color: var(--text-light);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.time-format-btn:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+}
+
+.date {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    opacity: 0.9;
+    margin-bottom: 0.5rem;
+}
+
+.date-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.timezone-select {
+    background: var(--primary-light);
+    color: var(--text-light);
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.datetime-input-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.date-input,
+.time-input {
+    padding: 12px;
+    border: 2px solid var(--primary-light);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.reminder-select {
+    padding: 12px;
+    border: 2px solid var(--primary-light);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.date-input:focus,
+.time-input:focus,
+.reminder-select:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+h1 i {
+    color: var(--accent);
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+
+#todo-form {
+    display: flex;
+    gap: 10px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid var(--primary-light);
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+}
+
+#todo-deadline {
+    padding: 12px;
+    border: 2px solid var(--primary-light);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+}
+
+#todo-input:focus, #todo-deadline:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+button {
+    background: var(--accent);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: var(--primary-light);
+    color: var(--text-light);
+    transform: translateY(-2px);
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-box {
+    background: var(--primary-dark);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+}
+
+.stat-box i {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.stat-box span {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    opacity: 0.8;
+}
+
+.stat-box div {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-light);
+    margin-top: 0.5rem;
+}
+
+.todo-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+
+.filter-btn {
+    background: transparent;
+    color: var(--text-light);
+    border: 2px solid var(--primary-light);
+}
+
+.filter-btn.active {
+    background: var(--accent);
+    color: var(--text-dark);
+    border-color: var(--accent);
+}
+
+.todo-list {
+    list-style: none;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    cursor: move;
+    transition: all 0.3s ease;
+}
+
+.todo-item:hover {
+    transform: translateX(5px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.todo-item.dragging {
+    opacity: 0.5;
+}
+
+.todo-item input[type="checkbox"] {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.todo-item .todo-content {
+    flex: 1;
+}
+
+.todo-item .todo-text {
+    color: var(--text-light);
+    margin-bottom: 0.25rem;
+}
+
+.todo-item .todo-deadline {
+    font-size: 0.8rem;
+    color: var(--accent);
+}
+
+.todo-item.completed .todo-text {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.todo-item button {
+    padding: 5px 10px;
+    background: transparent;
+    color: var(--error);
+}
+
+.todo-item button:hover {
+    background: var(--error);
+    color: var(--text-light);
+}
+
+.todo-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 2px solid var(--primary-dark);
+    margin-top: 1rem;
+    color: var(--text-light);
+}
+
+#clear-completed {
+    background: transparent;
+    color: var(--error);
+    padding: 5px 10px;
+}
+
+#clear-completed:hover {
+    background: var(--error);
+    color: var(--text-light);
+}
